@@ -1,0 +1,93 @@
+@import './variables';
+
+.currencyConverter {
+	max-width: 720px;
+    margin: 2rem auto;
+    padding: 1rem;
+	overflow: hidden;
+    position: relative;
+	-webkit-box-shadow: -2px 0px 7px 5px #DFDFDF; 
+	box-shadow: -2px 0px 7px 5px #DFDFDF;
+
+	h1 {
+		margin: 2rem 0;
+	}
+    
+	label {
+		display: block;
+		font-size: 0.7rem;
+		color: $grey;
+		opacity: 0.9;
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+
+	input {
+		width: 100%;
+		box-sizing: border-box;
+		border: none;
+		border-bottom: 1px solid $lightBlue;
+		padding: 0 0 10px 10px;
+		font-size: 1.3rem;
+		color: $lightBlue;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.swapper {
+		position: absolute;
+		right: 0px;
+		max-width: 32px;
+		background: none;
+		border: none;
+		img {
+			width: 100%;
+		}
+	}
+
+	.conversionSettings {
+		margin-bottom: 3.5rem;
+		position: relative;
+		.error {
+			color: $error;
+			padding: 0.5rem 0;
+		}
+	}
+
+	.currencyDropdowns {
+		margin-bottom: 3.5rem;
+	}
+
+	.convertArea {
+		button {
+			background: $lightBlue;
+			color: $white;
+			border-radius: 2rem;
+			border: none;
+			width: 100%;
+			padding: 1rem;
+			font-size: 1.3rem;
+			&:disabled {
+				opacity: 0.6;
+			}
+		}
+	}
+
+	.conversionResult {
+		margin-bottom: 2rem;
+		text-align: center;
+		p {
+			color: $lightBlue;
+			font-weight: 700;
+		}
+		.expiresIn {
+			background: $lightBlue;
+			color: white;
+			padding: 1rem;
+			max-width: 320px;
+			margin: 2rem auto;
+		}
+	}
+}
